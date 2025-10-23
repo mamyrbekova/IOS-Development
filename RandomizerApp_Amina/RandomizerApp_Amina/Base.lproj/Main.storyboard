@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomizerApp_Amina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="Lr9-P9-teE">
+                                <rect key="frame" x="60.333333333333343" y="206.66666666666666" width="281.33333333333326" height="281.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lr9-P9-teE" secondAttribute="height" multiplier="1:1" id="Jnc-Eu-sK1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DT-Qx-jjy">
+                                <rect key="frame" x="20" y="164" width="362" height="22.666666666666657"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="TimesNewRomanPS-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZW-tK-RNf">
+                                <rect key="frame" x="20" y="528" width="362" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8UY-my-xFi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Randomize">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="20" name="TimesNewRomanPSMT"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="randomize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCU-Qd-fzQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4DT-Qx-jjy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="6ro-gN-dIg"/>
+                            <constraint firstItem="yZW-tK-RNf" firstAttribute="top" secondItem="Lr9-P9-teE" secondAttribute="bottom" constant="40" id="9BC-s6-rca"/>
+                            <constraint firstItem="Lr9-P9-teE" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.7" id="Mwy-ab-Sb8"/>
+                            <constraint firstItem="Lr9-P9-teE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UkH-gX-hTN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yZW-tK-RNf" secondAttribute="trailing" constant="20" id="WaM-Qa-VNv"/>
+                            <constraint firstItem="4DT-Qx-jjy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="hTl-a0-uRp"/>
+                            <constraint firstItem="4DT-Qx-jjy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hrS-OT-Hk9"/>
+                            <constraint firstItem="yZW-tK-RNf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="i0h-sZ-I3b"/>
+                            <constraint firstItem="Lr9-P9-teE" firstAttribute="top" secondItem="4DT-Qx-jjy" secondAttribute="bottom" constant="20" id="mjl-oR-hxT"/>
+                            <constraint firstItem="4DT-Qx-jjy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pZW-Zk-VjJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4DT-Qx-jjy" secondAttribute="trailing" constant="20" id="vgt-4a-lgh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Favourite" destination="Lr9-P9-teE" id="2JA-8z-vNK"/>
+                        <outlet property="Name" destination="4DT-Qx-jjy" id="b8p-Kg-QZb"/>
+                        <outlet property="Randomize" destination="yZW-tK-RNf" id="Eo1-UD-0EO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" width="1600" height="1200"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
